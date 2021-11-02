@@ -39,7 +39,7 @@ include('db.php');
 			<div class="contact-bnr-w3-agile">
 				<ul>
 					<li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">INFO@SUNRISE.COM</a></li>
-					<li><i class="fa fa-phone" aria-hidden="true"></i>+94 (65)222-44-55</li>	
+					<li><i class="fa fa-phone" aria-hidden="true"></i>+84 (09)111-22-333</li>	
 					<li class="s-bar">
 						<div class="search">
 							<input class="search_box" type="checkbox" id="search_box">
@@ -218,14 +218,14 @@ include('db.php');
 		  <div class="container">
 				   <div class="ab-w3l-spa">
                             <h3 class="title-w3-agileits title-black-wthree">About Our SUN RISE</h3> 
-						   <p class="about-para-w3ls">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Sed tempus vestibulum lacus blandit faucibus. Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, at imperdiet urna</p>
+						   <p class="about-para-w3ls">Lorem Ipsum is simply dummy text of the printing and typesetting industry. But the time of the entrance to the lake is smooth. Now financing, the backyard or the Zen bears, the players take no radar, at the urn</p>
 						   <img src="images/about.jpg" class="img-responsive" alt="Hair Salon">
 										<div class="w3l-slider-img">
 											<img src="images/a1.jpg" class="img-responsive" alt="Hair Salon">
 										</div>
                                        <div class="w3ls-info-about">
 										    <h4>You'll love all the amenities we offer!</h4>
-											<p>Lorem ipsum dolor sit amet, ut magna aliqua. </p>
+											<p>Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain. </p>
 										</div>
 		          </div>
 		   	<div class="clearfix"> </div>
@@ -242,7 +242,7 @@ include('db.php');
 			 	<div class="advantage-block ">
 					<i class="fa fa-credit-card" aria-hidden="true"></i>
 			 		<h4>Stay First, Pay After! </h4>
-			 		<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
+			 		<p>But in certain emergencies and owing to the claims of duty or the obligations of business it will frequently occur that pleasures.</p>
 					<p><i class="fa fa-check" aria-hidden="true"></i>Decorated room, proper air conditioned</p>
 					<p><i class="fa fa-check" aria-hidden="true"></i>Private balcony</p>
 			 		
@@ -252,7 +252,7 @@ include('db.php');
 			 	<div class="advantage-block">
 					<i class="fa fa-clock-o" aria-hidden="true"></i>
 			 		<h4>24 Hour Restaurant</h4>
-			 		<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
+			 		<p>But in certain emergencies and owing to the claims of duty or the obligations of business it will frequently occur that pleasures.</p>
 					<p><i class="fa fa-check" aria-hidden="true"></i>24 hours room service</p>
 					<p><i class="fa fa-check" aria-hidden="true"></i>24-hour Concierge service</p>
 			 	</div>
@@ -590,9 +590,7 @@ include('db.php');
 								<i class="fa fa-star" aria-hidden="true"></i>
 								Worth to come again
 								</h4>
-								<p>Sed tempus vestibulum lacus blandit faucibus. 
-									Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, 
-									at imperdiet urna. </p>
+								<p>But the time of the entrance to the lake is smooth. Now financing, the backyard or the Zen bears, the players take no radar, at the urn</p>
 								<h5>Julia Rose</h5>
 								<p>Germany</p>
 							</div>
@@ -614,9 +612,7 @@ include('db.php');
 								<i class="fa fa-star-o" aria-hidden="true"></i>
 								Worth to come again
 								</h4>
-								<p>Sed tempus vestibulum lacus blandit faucibus. 
-									Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, 
-									at imperdiet urna. </p>
+								<p>But the time of the entrance to the lake is smooth. Now financing, the backyard or the Zen bears, the players take no radar, at the urn </p>
 								<h5>Jahnatan Smith</h5>
 								<p>United States</p>
 							</div>
@@ -638,9 +634,7 @@ include('db.php');
 								<i class="fa fa-star-o" aria-hidden="true"></i>
 								Worth to come again
 								</h4>
-								<p>Sed tempus vestibulum lacus blandit faucibus. 
-									Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, 
-									at imperdiet urna. </p>
+								<p>But the time of the entrance to the lake is smooth. Now financing, the backyard or the Zen bears, the players take no radar, at the urn </p>
 								<h5>Rosalind Cloer</h5>
 								<p>Italy</p>
 							</div>
@@ -662,9 +656,7 @@ include('db.php');
 								<i class="fa fa-star-o" aria-hidden="true"></i>
 								Worth to come again
 								</h4>
-								<p>Sed tempus vestibulum lacus blandit faucibus. 
-									Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, 
-									at imperdiet urna. </p>
+								<p>But the time of the entrance to the lake is smooth. Now financing, the backyard or the Zen bears, the players take no radar, at the urn </p>
 								<h5>Amie Bublitz</h5>
 								<p>Switzerland</p>
 							</div>
@@ -728,9 +720,9 @@ include('db.php');
 		</div>
 		<div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile1" data-aos="flip-right">
 			<h4>Connect With Us</h4>
-			<p class="contact-agile1"><strong>Phone :</strong>+94 (65)222-44-55</p>
+			<p class="contact-agile1"><strong>Phone :</strong>+84 (09)111-22-333</p>
 			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:name@example.com">INFO@SUNRISE.COM</a></p>
-			<p class="contact-agile1"><strong>Address :</strong> New Kalmunai Road, Batticaloa, Sri Lanka</p>
+			<p class="contact-agile1"><strong>Address :</strong> Hà Nội, Việt Nam</p>
 																
 			<div class="social-bnr-agileits footer-icons-agileinfo">
 				<ul class="social-icons3">
@@ -740,14 +732,14 @@ include('db.php');
 								
 							</ul>
 			</div>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3074.7905052320443!2d-77.84987248482734!3d39.586871613613056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c9f6a80ccf0661%3A0x7210426c67abc40!2sVirginia+Welcome+Center%2FSafety+Rest+Area!5e0!3m2!1sen!2sin!4v1485760915662" ></iframe>
+			
 		</div>
 		<div class="clearfix"></div>
 	</div>
 </section>
 <!-- /contact -->
 			<div class="copy">
-		        <p>© 2017 SUNRISE . All Rights Reserved | Design by <a href="index.php">SUNRISE</a> </p>
+		        <p>© 2021 SUNRISE . All Rights Reserved | Design by <a href="index.php">SUNRISE</a> </p>
 		    </div>
 <!--/footer -->
 <!-- js -->
