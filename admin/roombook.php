@@ -136,4 +136,124 @@ if(!isset($_SESSION["user"]))
             </div>
 
         </nav>
-        
+	    
+	    
+        <div id="page-wrapper">
+            <div id="page-inner">
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-header">
+                            Room Booking<small>	<?php echo  $curdate; ?> </small>
+                        </h1>
+                    </div>
+					
+					
+					<div class="col-md-8 col-sm-8">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                           Booking Conformation
+                        </div>
+                        <div class="panel-body">
+							
+							<div class="table-responsive">
+                                <table class="table">
+                                    <tr>
+                                            <th>DESCRIPTION</th>
+                                            <th>INFORMATION</th>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th><?php echo $title.$fname.$lname; ?> </th>
+                                            
+                                        </tr>
+										<tr>
+                                            <th>Email</th>
+                                            <th><?php echo $email; ?> </th>
+                                            
+                                        </tr>
+										<tr>
+                                            <th>Nationality </th>
+                                            <th><?php echo $nat; ?></th>
+                                            
+                                        </tr>
+										<tr>
+                                            <th>Country </th>
+                                            <th><?php echo $country;  ?></th>
+                                            
+                                        </tr>
+										<tr>
+                                            <th>Phone No </th>
+                                            <th><?php echo $Phone; ?></th>
+                                            
+                                        </tr>
+										<tr>
+                                            <th>Type Of the Room </th>
+                                            <th><?php echo $troom; ?></th>
+                                            
+                                        </tr>
+										<tr>
+                                            <th>No Of the Room </th>
+                                            <th><?php echo $nroom; ?></th>
+                                            
+                                        </tr>
+										<tr>
+                                            <th>Meal Plan </th>
+                                            <th><?php echo $meal; ?></th>
+                                            
+                                        </tr>
+										<tr>
+                                            <th>Bedding </th>
+                                            <th><?php echo $bed; ?></th>
+                                            
+                                        </tr>
+										<tr>
+                                            <th>Check-in Date </th>
+                                            <th><?php echo $cin; ?></th>
+                                            
+                                        </tr>
+										<tr>
+                                            <th>Check-out Date</th>
+                                            <th><?php echo $cout; ?></th>
+                                            
+                                        </tr>
+										<tr>
+                                            <th>No of days</th>
+                                            <th><?php echo $days; ?></th>
+                                            
+                                        </tr>
+										<tr>
+                                            <th>Status Level</th>
+                                            <th><?php echo $sta; ?></th>
+                                            
+                                        </tr>
+                                   
+                                  
+                                        
+                                        
+                                    
+                                </table>
+                            </div>
+                        
+					
+							
+                        </div>
+                        <div class="panel-footer">
+                            <form method="post">
+										<div class="form-group">
+														<label>Select the Conformation</label>
+														<select name="conf"class="form-control">
+															<option value selected>	</option>
+															<option value="Conform">Conform</option>
+															
+															
+														</select>
+										 </div>
+							<input type="submit" name="co" value="Conform" class="btn btn-success">
+							
+							</form>
+                        </div>
+                    </div>
+		    </div>
