@@ -60,8 +60,30 @@ include('db.php')
                                                 <option value="Miss.">Miss.</option>
                                                 <option value="Mr.">Mr.</option>
                                                 <option value="Mrs.">Mrs.</option>
-												<option value="Prof.">Prof.</option>
-												<option value="Rev .">Rev .</option>
-												<option value="Rev . Fr">Rev . Fr .</option>
                                             </select>
                               </div>
+                              <div class="form-group">
+                                            <label>First Name</label>
+                                            <input name="fname" class="form-control" required>
+                                            
+                               </div>
+							   <div class="form-group">
+                                            <label>Last Name</label>
+                                            <input name="lname" class="form-control" required>
+                                            
+                               </div>
+							   <div class="form-group">
+                                            <label>Email</label>
+                                            <input name="email" type="email" class="form-control" required>
+                                            
+                               </div>
+							   <div class="form-group">
+                                            <label>Nationality*</label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="nation"  value="Sri Lankan" checked="">Việt Nam
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="nation"  value="Non Sri Lankan ">Non Việt Nam 
+                                            </label>
+                         
+                                </div>
