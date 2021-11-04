@@ -54,7 +54,23 @@ if(!isset($_SESSION["user"]))
                 <!-- /.dropdown -->
             </ul>
         </nav>
-  
+  	<!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a  href="settings.php"><i class="fa fa-dashboard"></i>Rooms Status</a>
+                    </li>
+					<li>
+                        <a  class="active-menu" href="room.php"><i class="fa fa-plus-circle"></i>Add Room</a>
+                    </li>
+                    <li>
+                        <a  href="roomdel.php"><i class="fa fa-desktop"></i> Delete Room</a>
+                    </li>    
+                </ul>
+            </div>
+        </nav>
  </div>
 </body>
 </html>
