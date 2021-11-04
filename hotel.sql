@@ -102,8 +102,6 @@ CREATE TABLE IF NOT EXISTS `room` (
 `id` int(10) unsigned NOT NULL,
   `type` varchar(15) DEFAULT NULL,
   `bedding` varchar(10) DEFAULT NULL,
-  `place` varchar(10) DEFAULT NULL,
-  `cusid` int(11) DEFAULT NULL
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
 
 --
