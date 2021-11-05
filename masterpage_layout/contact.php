@@ -41,9 +41,9 @@
 		</div>
 		<div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile1" data-aos="flip-right">
 			<h4>Connect With Us</h4>
-			<p class="contact-agile1"><strong>Phone :</strong>+94 (65)222-44-55</p>
+			<p class="contact-agile1"><strong>Phone :</strong>+84 97 7626 563</p>
 			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:name@example.com">INFO@SUNRISE.COM</a></p>
-			<p class="contact-agile1"><strong>Address :</strong> New Kalmunai Road, Batticaloa, Sri Lanka</p>												
+			<p class="contact-agile1"><strong>Address :</strong> 275 Tây Sơn Road, Đống Đa District , Hà Nội</p>												
 			<div class="social-bnr-agileits footer-icons-agileinfo">
 				<ul class="social-icons3">
 					<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
