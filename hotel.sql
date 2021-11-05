@@ -1,218 +1,246 @@
 -- phpMyAdmin SQL Dump
--- version 4.2.7.1
--- http://www.phpmyadmin.net
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Sep 14, 2017 at 06:52 PM
--- Server version: 5.6.20
--- PHP Version: 5.5.15
+-- Máy chủ: 127.0.0.1
+-- Thời gian đã tạo: Th10 05, 2021 lúc 10:05 AM
+-- Phiên bản máy phục vụ: 10.4.21-MariaDB
+-- Phiên bản PHP: 8.0.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `hotel`
+-- Cơ sở dữ liệu: `hotel`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `contact`
+-- Cấu trúc bảng cho bảng `contact`
 --
 
-CREATE TABLE IF NOT EXISTS `contact` (
-`id` int(10) unsigned NOT NULL,
-  `fullname` varchar(100) DEFAULT NULL,
+CREATE TABLE `contact` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `fullname` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `phoneno` int(10) DEFAULT NULL,
-  `email` text,
+  `email` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `cdate` date DEFAULT NULL,
-  `approval` varchar(12) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+  `approval` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Đang đổ dữ liệu cho bảng `contact`
+--
+
+INSERT INTO `contact` (`id`, `fullname`, `phoneno`, `email`, `cdate`, `approval`) VALUES
+(2, 'quanganhhost', 555555, 'anhphungquang1792@gmail.com', '2021-11-04', 'Not Allowed');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `login`
+-- Cấu trúc bảng cho bảng `login`
 --
 
-CREATE TABLE IF NOT EXISTS `login` (
-`id` int(10) unsigned NOT NULL,
-  `usname` varchar(30) DEFAULT NULL,
-  `pass` varchar(30) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+CREATE TABLE `login` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `usname` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `pass` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `login`
+-- Đang đổ dữ liệu cho bảng `login`
 --
 
 INSERT INTO `login` (`id`, `usname`, `pass`) VALUES
 (1, 'Admin', '1234'),
-(2, 'Prasath', '12345');
+(4, 'qa1792', '170920');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `newsletterlog`
+-- Cấu trúc bảng cho bảng `newsletterlog`
 --
 
-CREATE TABLE IF NOT EXISTS `newsletterlog` (
-`id` int(10) unsigned NOT NULL,
-  `title` varchar(52) DEFAULT NULL,
-  `subject` varchar(100) DEFAULT NULL,
-  `news` text
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+CREATE TABLE `newsletterlog` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `title` varchar(52) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `subject` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `news` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Đang đổ dữ liệu cho bảng `newsletterlog`
+--
+
+INSERT INTO `newsletterlog` (`id`, `title`, `subject`, `news`) VALUES
+(1, 'd?dadad', 'adadada', 'adadadada');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `payment`
+-- Cấu trúc bảng cho bảng `payment`
 --
 
-CREATE TABLE IF NOT EXISTS `payment` (
+CREATE TABLE `payment` (
   `id` int(11) DEFAULT NULL,
-  `title` varchar(5) DEFAULT NULL,
-  `fname` varchar(30) DEFAULT NULL,
-  `lname` varchar(30) DEFAULT NULL,
-  `troom` varchar(30) DEFAULT NULL,
-  `tbed` varchar(30) DEFAULT NULL,
+  `title` varchar(5) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `fname` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `lname` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `troom` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tbed` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `nroom` int(11) DEFAULT NULL,
   `cin` date DEFAULT NULL,
   `cout` date DEFAULT NULL,
   `ttot` double(8,2) DEFAULT NULL,
   `fintot` double(8,2) DEFAULT NULL,
   `mepr` double(8,2) DEFAULT NULL,
-  `meal` varchar(30) DEFAULT NULL,
+  `meal` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `btot` double(8,2) DEFAULT NULL,
   `noofdays` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
-
 --
--- Table structure for table `room`
+-- Đang đổ dữ liệu cho bảng `payment`
 --
 
-CREATE TABLE IF NOT EXISTS `room` (
-`id` int(10) unsigned NOT NULL,
-  `type` varchar(15) DEFAULT NULL,
-  `bedding` varchar(10) DEFAULT NULL,
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
-
---
--- Dumping data for table `room`
---
-
-INSERT INTO `room` (`id`, `type`, `bedding`, `place`, `cusid`) VALUES
-(1, 'Superior Room', 'Single', 'Free', NULL),
-(2, 'Superior Room', 'Double', 'Free', NULL),
-(3, 'Superior Room', 'Triple', 'Free', NULL),
-(4, 'Single Room', 'Quad', 'Free', NULL),
-(5, 'Superior Room', 'Quad', 'Free', NULL),
-(6, 'Deluxe Room', 'Single', 'Free', NULL),
-(7, 'Deluxe Room', 'Double', 'Free', NULL),
-(8, 'Deluxe Room', 'Triple', 'Free', NULL),
-(9, 'Deluxe Room', 'Quad', 'Free', NULL),
-(10, 'Guest House', 'Single', 'Free', NULL),
-(11, 'Guest House', 'Double', 'Free', NULL),
-(12, 'Guest House', 'Quad', 'Free', NULL),
-(13, 'Single Room', 'Single', 'Free', NULL),
-(14, 'Single Room', 'Double', 'Free', NULL),
-(15, 'Single Room', 'Triple', 'Free', NULL);
+INSERT INTO `payment` (`id`, `title`, `fname`, `lname`, `troom`, `tbed`, `nroom`, `cin`, `cout`, `ttot`, `fintot`, `mepr`, `meal`, `btot`, `noofdays`) VALUES
+(2, 'Dr.', 'ssss', 'aaaa', 'Deluxe Room', 'Double', 3, '2021-11-04', '2021-11-06', 1320.00, 1346.40, 17.60, 'Breakfast', 8.80, 2);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `roombook`
+-- Cấu trúc bảng cho bảng `room`
 --
 
-CREATE TABLE IF NOT EXISTS `roombook` (
-`id` int(10) unsigned NOT NULL,
-  `Title` varchar(5) DEFAULT NULL,
-  `FName` text,
-  `LName` text,
-  `Email` varchar(50) DEFAULT NULL,
-  `National` varchar(30) DEFAULT NULL,
-  `Country` varchar(30) DEFAULT NULL,
-  `Phone` text,
-  `TRoom` varchar(20) DEFAULT NULL,
-  `Bed` varchar(10) DEFAULT NULL,
-  `NRoom` varchar(2) DEFAULT NULL,
-  `Meal` varchar(15) DEFAULT NULL,
+CREATE TABLE `room` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `type` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `bedding` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Đang đổ dữ liệu cho bảng `room`
+--
+
+INSERT INTO `room` (`id`, `type`, `bedding`) VALUES
+(1, 'Superior Room', 'Single'),
+(2, 'Superior Room', 'Double'),
+(3, 'Superior Room', 'Triple'),
+(4, 'Single Room', 'Quad'),
+(5, 'Superior Room', 'Quad'),
+(6, 'Deluxe Room', 'Single'),
+(7, 'Deluxe Room', 'Double'),
+(8, 'Deluxe Room', 'Triple'),
+(9, 'Deluxe Room', 'Quad'),
+(10, 'Guest House', 'Single'),
+(11, 'Guest House', 'Double'),
+(12, 'Guest House', 'Quad'),
+(13, 'Single Room', 'Single'),
+(14, 'Single Room', 'Double'),
+(15, 'Single Room', 'Triple');
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `roombook`
+--
+
+CREATE TABLE `roombook` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `Title` varchar(5) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `FName` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `LName` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `Email` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `National` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `Country` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `Phone` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `TRoom` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `Bed` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `NRoom` varchar(2) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `Meal` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `cin` date DEFAULT NULL,
   `cout` date DEFAULT NULL,
-  `stat` varchar(15) DEFAULT NULL,
+  `stat` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `nodays` int(11) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Indexes for dumped tables
+-- Chỉ mục cho các bảng đã đổ
 --
 
 --
--- Indexes for table `contact`
+-- Chỉ mục cho bảng `contact`
 --
 ALTER TABLE `contact`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `login`
+-- Chỉ mục cho bảng `login`
 --
 ALTER TABLE `login`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `newsletterlog`
+-- Chỉ mục cho bảng `newsletterlog`
 --
 ALTER TABLE `newsletterlog`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `room`
+-- Chỉ mục cho bảng `room`
 --
 ALTER TABLE `room`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `roombook`
+-- Chỉ mục cho bảng `roombook`
 --
 ALTER TABLE `roombook`
- ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT cho các bảng đã đổ
 --
 
 --
--- AUTO_INCREMENT for table `contact`
+-- AUTO_INCREMENT cho bảng `contact`
 --
 ALTER TABLE `contact`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 --
--- AUTO_INCREMENT for table `login`
+-- AUTO_INCREMENT cho bảng `login`
 --
 ALTER TABLE `login`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
 --
--- AUTO_INCREMENT for table `newsletterlog`
+-- AUTO_INCREMENT cho bảng `newsletterlog`
 --
 ALTER TABLE `newsletterlog`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
--- AUTO_INCREMENT for table `room`
+-- AUTO_INCREMENT cho bảng `room`
 --
 ALTER TABLE `room`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=16;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
 --
--- AUTO_INCREMENT for table `roombook`
+-- AUTO_INCREMENT cho bảng `roombook`
 --
 ALTER TABLE `roombook`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
