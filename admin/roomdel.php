@@ -62,6 +62,22 @@ $rre=mysqli_query($con,$rsql);
 		<!-- /.dropdown -->
 	    </ul>
 	</nav>
+	<!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <li>
+                        <a  href="settings.php"><i class="fa fa-dashboard"></i>Room Status</a>
+                    </li>
+					<li>
+                        <a   href="room.php"><i class="fa fa-plus-circle"></i>Add Room</a>
+                    </li>
+                    <li>
+                        <a  class="active-menu" href="roomdel.php"><i class="fa fa-pencil-square-o"></i> Delete Room</a>
+                    </li>
+				</ul>
+            </div>
+        </nav>
 	 
 </div>
  
